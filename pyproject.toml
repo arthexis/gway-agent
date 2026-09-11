@@ -7,10 +7,10 @@ name = "gway-agent"
 version = "0.1.0"
 description = "Codex skills, hooks, and tools for the gway ecosystem"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Arthexis" }]
-dependencies = []
+dependencies = ["tomli>=2; python_version < '3.11'"]
 
 [project.optional-dependencies]
 test = [
@@ -26,4 +26,4 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py311"
+target-version = "py310"
